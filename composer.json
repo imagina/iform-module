@@ -1,6 +1,7 @@
 {
-    "name": "imagina/iform",
-    "description": "",
+    "name": "imagina/iform-module",
+    "description": "Imagina laravel module Iform",
+    "type": "laravel-module",
     "authors": [
         {
             "name": "Imagina Colombia",
