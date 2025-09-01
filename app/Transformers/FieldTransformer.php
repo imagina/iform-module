@@ -21,7 +21,7 @@ class FieldTransformer extends CoreResource
   public function modelAttributes($request): array
   {
     return [
-      'typeObject' => $this->type,
+      'type' => $this->type,
       'dynamicField' => $this->buildDynamicField($this)
     ];
   }

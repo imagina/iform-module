@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('iform__fields', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->string('type')->index();
+            $table->string('type_id')->index();
             $table->string('system_name')->nullable();
             $table->boolean('required')->nullable()->default(false);
             $table->json('selectable')->nullable();

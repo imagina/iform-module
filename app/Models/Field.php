@@ -35,7 +35,7 @@ class Field extends CoreModel
     'description',
   ];
   protected $fillable = [
-    'type',
+    'type_id',
     'system_name',
     'required',
     'form_id',
@@ -109,7 +109,7 @@ class Field extends CoreModel
   {
     return Attribute::get(function () {
       $typeModel = new Type();
-      return $typeModel->show($this->getRawOriginal('type'));
+      return $typeModel->show($this->getRawOriginal('type_id'));
     });
   }
 
