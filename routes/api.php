@@ -57,7 +57,7 @@ Route::prefix('/iform/v1')->group(function () {
     'prefix' => 'leads',
     'controller' => LeadApiController::class,
     'permission' => 'iform.leads',
-    //'middleware' => ['create' => [], 'index' => [], 'show' => [], 'update' => [], 'delete' => [], 'restore' => []],
+    'middleware' => ['create' => []],
     // 'customRoutes' => [ // Include custom routes if needed
     //  [
     //    'method' => 'post', // get,post,put....
