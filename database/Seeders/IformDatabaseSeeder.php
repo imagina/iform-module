@@ -11,6 +11,6 @@ class IformDatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // $this->call([]);
+      $this->call([InitialFormsSeeder::class]);
     }
 }
