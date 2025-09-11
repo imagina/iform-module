@@ -46,6 +46,13 @@ class Lead extends CoreModel
     'values' => 'array'
   ];
 
+  /**
+   * Media Fillable
+   */
+  public $mediaFillable = [
+    'file' => 'single'
+  ];
+
   public function form(): BelongsTo
   {
     return $this->belongsTo(Form::class);
